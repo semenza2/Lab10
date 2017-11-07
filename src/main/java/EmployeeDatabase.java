@@ -73,7 +73,7 @@ public class EmployeeDatabase {
         int count = 0;
         for (Employee e : employees) {
             if (e.getManager().equals(employee.getName())) {
-                count += countEmployeesUnder(e);
+                count += 1 + countEmployeesUnder(e);
             }
         }
         return count;
